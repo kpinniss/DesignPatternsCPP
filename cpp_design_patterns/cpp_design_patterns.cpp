@@ -186,15 +186,84 @@ using namespace std;
 //****************************************************************************************************************
 //lesson 3 vid5
 //Liskov Substituion Principal 
+//class Rectangle
+//{
+//protected:
+//	int width, height;
+//public:
+//	Rectangle(int width, int height) : width(width), height(height){}
+//
+//	int getWidth() const 
+//	{
+//		return width;
+//	}
+//
+//	virtual void setWidth(int width)
+//	{
+//		Rectangle::width = width;
+//	}
+//
+//	int getHeight() const
+//	{
+//		return height;
+//	}
+//
+//	virtual void setHeight(int height)
+//	{
+//		Rectangle::height = height;
+//	}
+//
+//	int area() const
+//	{
+//		return width * height;
+//	}
+//};
+//
+//struct RectangleFactory
+//{
+//	static Rectangle createRectangle(int w, int h);
+//	static Rectangle createSquare(int size);
+//};
+//
+//class Square : public Rectangle
+//{
+//public:
+//	Square(int size) : Rectangle(size,size){}
+//
+//	void setWidth(int width) override
+//	{
+//		this -> width = this->height = width;
+//	}
+//
+//	void setHeight(int height) override
+//	{
+//		this->width = this->height = height;
+//	}
+//};
+//
+//
+//
+//void process(Rectangle& rect, int h)
+//{
+//	int w = rect.getWidth();
+//	rect.setHeight(h);
+//	cout << "Expected Area" + to_string(w*h) << " Actual: " << to_string(rect.area()) << endl;
+//}
+//
+//int main()
+//{
+//	Square sq{ 3 };
+//	process(sq,10);
+//	return 0;
+//}
+//*******************************************************************************************************************
+//lesson4 vid6
+//Interface Segregation
 
 int main()
 {
 
-	return 0;
 }
-
-
-
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
